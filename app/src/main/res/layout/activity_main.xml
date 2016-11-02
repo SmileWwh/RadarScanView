@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:makeramen="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/radar_scan_bg"
+        makeramen:riv_border_color="@color/yellow"
+        makeramen:riv_border_width="2dp"
+        makeramen:riv_oval="true" />
+
+    <com.wwh.radarscanview.radarscan.RadarScanView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/radar"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        app:circleBold="3dp"
+        app:radarColor="@color/yellow_20"
+        app:tailColor="@color/yellow_100" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="146dp"
+        android:layout_height="146dp"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/photo_1"
+        makeramen:riv_border_color="@color/white"
+        makeramen:riv_border_width="2dp"
+        makeramen:riv_oval="true" />
+</RelativeLayout>

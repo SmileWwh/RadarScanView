@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--雷达扫描-->
+    <declare-styleable name="RadarScanView">
+        <attr name="radarColor" format="color" />
+        <attr name="tailColor" format="color" />
+        <attr name="circleBold" format="dimension" />
+    </declare-styleable>
+</resources>
